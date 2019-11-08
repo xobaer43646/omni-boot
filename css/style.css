@@ -1,0 +1,644 @@
+/* ==================================== */
+/* =========== GLOBAL CSS ============= */
+/* ==================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+:focus{
+  outline: 0;
+}
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+ul li{
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+}
+/* font-family: 'Lato', sans-serif; */
+h2{
+  color: #222;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+/* ==================================== */
+/* =========== Header Section ========= */
+
+header{
+  background: linear-gradient(to right,#00867d,#0090a0) ;
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+.logo{
+  float: left;
+}
+.navbar{
+  float: right;
+}
+.navbar ul{
+  margin-top: 20px;
+}
+.navbar ul li{
+  display: inline-block;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.navbar ul li a:hover{
+  color: #b7b7b7;
+  cursor: pointer;
+}
+.navbar ul li:last-child a:hover{
+  color: #fff;
+  padding: 8px 12px;
+}
+.navbar .btn-signup a{
+  background: #00c29e;
+  border-radius: 3px;
+}
+
+/* ==================================== */
+/* =========== Banner Section ========= */
+
+.banner-area{
+  background: linear-gradient(rgba(34,38,49,0.7),rgba(34,38,49,0.7)), url(../img/banner-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.hero-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hero-text h1{
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.hero-text .heading{
+  text-transform: lowercase;
+  font-weight: 300;
+}
+.hero-text .btn{
+  margin: 40px 5px 0;
+  height: 40px;
+  width: 150px;
+  background: transparent;
+  border: 2px solid #eee;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 5px #888;
+}
+.hero-text .btn:hover{
+  background: #008b8f;
+  cursor: pointer;
+}
+.hero-text .btn-primary{}
+.hero-text .btn-second{}
+
+/* ==================================== */
+/* ========= Delivery Section ========= */
+
+.delivery-area{
+  background: #e9e9e9;
+  float: left;
+  width: 100%;
+  padding: 70px 0;
+  text-align: center;
+}
+.delivery-area h2{
+  color: #222;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.delivery-area p{
+  width: 70%;
+  margin: 0 auto 60px;
+  line-height: 1.5
+}
+
+.delivery-box{
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  width: 23%;
+  height: 400px;
+  margin-right: 1%;
+  margin-left: 1%;
+  float: left;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px #888;
+}
+.delivery-box:first-child{
+  margin-left: ;
+}
+.delivery-top{
+  margin: 20px 0;
+  border-bottom: 1px solid #aaa;
+}
+.delivery-box img{
+  margin-bottom: 15px;
+}
+.delivery-box h4{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.delivery-box p{
+  width:90%;
+  margin: 0 auto;
+  color: #444;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* ==================================== */
+/* ====== How It Works Section ======== */
+
+.how-area{
+  float: left;
+  width: 100%;
+  background: #fff;
+  padding: 60px 0;
+}
+.how-area h2{
+  color: #222;
+  margin-bottom: 60px;
+}
+.how-left{
+  width: 35%;
+  float: left;
+}
+.how-left img{
+  float: right;
+  margin-right: 20px;
+}
+.how-right{
+  width: 65%;
+  float: right;
+  margin-top: 60px;
+}
+.how-feature{
+  width: 75%;
+  float: left;
+  margin-left: 30px;
+}
+.how-feature-left{
+  width: 15%;
+  float: left;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.how-feature-right{
+  width: 85%;
+  float: right;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.how-feature-left .number{
+  font-size: 45px;
+  height: 55px;
+  width: 55px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid #008883;
+  border-radius: 50%;
+  display: inline-block;
+}
+.how-feature-right p{
+  padding-top: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.how-feature .use-app{
+  margin-top: 30px;
+}
+.use-app img{
+  height: 60px;
+}
+.use-app .google-app{
+  margin-right: 18px;
+}
+.use-app .apple-app{
+  height: 58px;
+}
+
+/* ==================================== */
+/* ======== Our Cities Section ======== */
+
+.cities-area{
+  float: left;
+  width: 100%;
+  padding: 80px 0;
+  background: #e9e9e9;
+}
+.cities-area h2{}
+.cities-area .cities{
+  width: 25%;
+  float: left;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.cities img{}
+.cities h3{
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 15px 0 25px;
+}
+.cities .fa{
+  color: #2d8364;
+  display: inline-block;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.cities p{
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* ==================================== */
+/* ======= Testimonial Section ======== */
+
+.testimonial-area{
+  background: linear-gradient(rgba(25,111,61,0.9),rgba(45,131,100,0.9)) , url(../img/testimonial-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  float: left;
+  width: 100%;
+  color: #fff;
+  padding: 80px 0;
+}
+.testimonial-area h2{
+  color: #fff;
+}
+.testimonial-area p .quote{
+  display: inline-block;
+  font-size: 80px;
+  height: 40px;
+  width: 50px;
+  line-height: 60px;
+}
+.testimonial-area p{
+  font-family: 'Lato', sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.4;
+}
+.testimony-by{
+  width: 21%;
+  margin: 40px auto;
+  position: relative;
+}
+.testimony-by img{
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.testimony-by .testi-name{
+  font-family: 'Lato', sans-serif;
+  display: inline-block;
+  position: absolute;
+  font-size: 22px;
+  top: 40px;
+  left: 120px;
+}
+
+/* ==================================== */
+/* =========== Plans Section ========== */
+
+.plans-area{
+  width: 100%;
+  float: left;
+  background: #e9e9e9;
+  padding: 80px 0;
+}
+.plans-area h2{
+  margin-bottom: 60px;
+}
+
+/* Default Plan Box Before Hover */
+.plan-box{
+  width: 31.3%;
+  float: left;
+  background: #fff;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0px 1px 5px #888;
+}
+.plan-box:nth-child(2){
+  margin-right:3%;
+}
+.plan-box:nth-child(3){
+  margin-right:3%;
+}
+.plan-head{
+  text-align: center;
+}
+.plan-head h4{
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 20px 0 30px;
+}
+.plan-head p{
+  font-size: 22px;
+}
+.plan-head .plan-rate{
+  font-size: 32px;
+  font-weight: 600;
+}
+.plans-area .br-line{
+  border: 1px solid #fff;
+  margin: 15px 0;
+}
+.plan-body{
+  margin-bottom: ;
+}
+.plan-body p{
+  font-size: 18px;
+  line-height: 45px;
+}
+.plan-body .fa{
+  color: #2d8364;
+  font-size: 22px;
+  margin-right: 12px;
+}
+.plan-box .btn-plan{
+  background: transparent;
+  padding: 10px 22px;
+  border: 2px solid #008882;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 30px 0 20px 75px;
+}
+
+/* ====== Plan Box Hover Effect Area ===== */
+
+.plan-box-hover{
+  width: 100%;
+  color: #fff;
+  float: left;
+  background: #008882;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.25s linear;
+}
+.plan-box-hover .plan-head2{
+  text-align: center;
+}
+.plan-box-hover .plan-head2 h4{
+  text-transform: uppercase;
+  font-size: 26px;
+  margin: 20px 0 30px;
+}
+.plan-box-hover .plan-head2 p{
+  font-size: 22px;
+}
+.plan-box-hover .plan-rate2{
+  font-size: 32px;
+  font-weight: 600;
+}
+.plan-box-hover .br-line2{
+  border: 1px dashed #ccc;
+  margin: 15px 0;
+}
+.plan-box-hover .plan-body2{
+  margin-bottom: ;
+}
+.plan-box-hover .plan-body2 p{
+  font-size: 18px;
+  line-height: 45px;
+}
+.plan-box-hover .plan-body2 .fa2{
+  color: #fff;
+  font-size: 22px;
+  margin-right: 12px;
+}
+.plan-box-hover .btn-plan2{
+  background: transparent;
+  color: #fff;
+  padding: 10px 22px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 30px 0 20px 75px;
+}
+
+/* Box Hover Command Here */
+.plan-box:hover .plan-box-hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.plan-box-hover .btn-plan2:hover{
+  background: #005551;
+  cursor: pointer;
+  transform: scale(1.09);
+}
+
+/* ==================================== */
+/* ========= Contact Section ========== */
+
+.contact-area{
+  width: 100%;
+  float: left;
+  background: #fff;
+  padding: 80px 0;
+}
+.contact-area h2{}
+.contact-area form{
+  width: 44%;
+  margin-left: 28%;
+}
+.contact-area form input{
+  display: block;
+}
+.form-group{
+  background: #e9e9e9;
+}
+.form-group, .form-group select{
+  width: 100%;
+  height: 45px;
+  background: #e9e9e9;
+  margin-bottom: 16px;
+  font-size: 15px;
+  border-radius: 4px;
+}
+.contact-area input[type=text],
+.contact-area input[type=email]{
+  padding: 0 15px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+}
+.form-group select{
+  padding: 0 12px;
+}
+.form-group option .select-head{}
+::placeholder{
+  color: #111;
+}
+.btn-contact{
+  background: transparent;
+  padding: 12px 22px;
+  border: 2px solid #008882;
+  border-right: 3px solid #008882;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin: 15px 35%;
+  transition: all 0.3s linear;
+}
+.btn-contact:hover{
+  background: #008882;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ==================================== */
+/* ========== Footer Section ========== */
+
+footer{
+  width: 100%;
+  float: left;
+  background: linear-gradient(rgba(0,41,23,0.7),rgba(0,41,23,0.7)) , url(../img/footer-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0;
+  color: #fff;
+}
+.footer-left{
+  width: 55%;
+  float: left;
+  position: relative;
+  /* Position Relative for Map Icon */
+}
+.footer-right{
+  width: 45%;
+  float: right;
+}
+.footer-left img{}
+
+.footer-left .fa-map-marker{
+  position: absolute;
+  color: #f00;
+  float: left;
+  font-size: 35px;
+  width: 10px;
+  height: 10px;
+  top: 375px;
+  left: 67px;
+}
+.footer-right .dot{
+  display: inline-block;
+  font-size: 25px;
+  margin-right: 8px;
+}
+.right-top{
+  padding: 60px 0;
+}
+.right-top h4{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.right-top p{
+  padding-left: 35px;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+.right-down{
+  margin-left: 35px;
+}
+.right-down h3{
+  text-transform: capitalize;
+  font-size: 34px;
+  font-weight: 600;
+}
+.right-down ul{
+  margin-top: 15px;
+}
+.right-down ul li{
+  display: inline-block;
+}
+.right-down ul li a{
+  margin-right: 6px;
+}
+.right-down .fa{
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #222;
+  background: #fff;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.right-down .fa-facebook,
+.right-down .fa-instagram{
+  font-size: 24px;
+}
+.right-down .fa:hover{
+  transform: rotate(360deg);
+}
+
+
+
+
+
+/*
+
+===
+=======
+============
+
+              By:
+
+          Abdullah Al Nayeem
+
+====================================
+===========================================
+=================================================
+
+*/
